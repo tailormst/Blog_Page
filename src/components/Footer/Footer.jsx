@@ -1,134 +1,96 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import Logo from '../Logo'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Logo from '../Logo';
+import './Footer.css'; 
 
 function Footer() {
-  return (
-    <section className="relative overflow-hidden py-10 bg-gray-950 text-white border border-t-2 border-t-white">
-            <div className="relative z-10 mx-auto max-w-7xl px-4">
-                <div className="-m-6 flex flex-wrap">
-                    <div className="w-full p-6 md:w-1/2 lg:w-5/12">
-                        <div className="flex h-full flex-col justify-between">
-                            <div className="mb-4 items-center flex flex-row">
+    return (
+        <footer className="footer">
+            <div className="footer-container">
+                <div className="footer-flex">
+                    <div className="footer-item footer-item-lg-5 footer-item-md">
+                        <div className="footer-content">
+                            <div className="footer-logo">
                                 <Logo width="100px" />
-                                <h1 className='font-bold text-2xl mt-2'>TYPE YOUR BLOG</h1>
+                                <h1 className="footer-title">TYPE YOUR BLOG</h1>
                             </div>
                             <div>
-                                <p className="text-sm font-bold text-blue-400">
+                                <p className="footer-text">
                                     &copy; Copyright 2023. All Rights Reserved by DevUI.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div className="w-full p-6 md:w-1/2 lg:w-2/12">
-                        <div className="h-full">
-                            <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-white hover:text-blue-700">
-                                Company
-                            </h3>
-                            <ul>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-white hover:text-blue-700"
-                                        to="/"
-                                    >
+                    <div className="footer-item footer-item-lg-2 footer-item-md">
+                        <div className="footer-content">
+                            <h3 className="footer-heading">Company</h3>
+                            <ul className="footer-list">
+                                <li className="footer-list-item">
+                                    <Link className="footer-link" to="/">
                                         Features
                                     </Link>
                                 </li>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-white hover:text-blue-700"
-                                        to="/"
-                                    >
+                                <li className="footer-list-item">
+                                    <Link className="footer-link" to="/">
                                         Pricing
                                     </Link>
                                 </li>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-white hover:text-blue-700"
-                                        to="/"
-                                    >
+                                <li className="footer-list-item">
+                                    <Link className="footer-link" to="/">
                                         Affiliate Program
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link
-                                        className=" text-base font-medium text-white hover:text-blue-700"
-                                        to="/"
-                                    >
+                                <li className="footer-list-item">
+                                    <Link className="footer-link" to="/">
                                         Press Kit
                                     </Link>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div className="w-full p-6 md:w-1/2 lg:w-2/12">
-                        <div className="h-full">
-                            <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-white hover:text-blue-700">
-                                Support
-                            </h3>
-                            <ul>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-white hover:text-blue-700"
-                                        to="/"
-                                    >
+                    <div className="footer-item footer-item-lg-2 footer-item-md">
+                        <div className="footer-content">
+                            <h3 className="footer-heading">Support</h3>
+                            <ul className="footer-list">
+                                <li className="footer-list-item">
+                                    <Link className="footer-link" to="/">
                                         Account
                                     </Link>
                                 </li>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-white hover:text-blue-700"
-                                        to="/"
-                                    >
+                                <li className="footer-list-item">
+                                    <Link className="footer-link" to="/">
                                         Help
                                     </Link>
                                 </li>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium  text-white hover:text-blue-700"
-                                        to="/"
-                                    >
+                                <li className="footer-list-item">
+                                    <Link className="footer-link" to="/">
                                         Contact Us
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link
-                                        className=" text-base font-medium text-white hover:text-blue-700"
-                                        to="/"
-                                    >
+                                <li className="footer-list-item">
+                                    <Link className="footer-link" to="/">
                                         Customer Support
                                     </Link>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div className="w-full p-6 md:w-1/2 lg:w-3/12">
-                        <div className="h-full">
-                            <h3 className="tracking-px mb-9  text-xs font-semibold uppercase  text-white hover:text-blue-700">
-                                Legals
-                            </h3>
-                            <ul>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-white hover:text-blue-700"
-                                        to="/"
-                                    >
+                    <div className="footer-item footer-item-lg-3 footer-item-md">
+                        <div className="footer-content">
+                            <h3 className="footer-heading">Legals</h3>
+                            <ul className="footer-list">
+                                <li className="footer-list-item">
+                                    <Link className="footer-link" to="/">
                                         Terms &amp; Conditions
                                     </Link>
                                 </li>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-white hover:text-blue-700"
-                                        to="/"
-                                    >
+                                <li className="footer-list-item">
+                                    <Link className="footer-link" to="/">
                                         Privacy Policy
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link
-                                        className=" text-base font-medium text-white hover:text-blue-700"
-                                        to="/"
-                                    >
+                                <li className="footer-list-item">
+                                    <Link className="footer-link" to="/">
                                         Licensing
                                     </Link>
                                 </li>
@@ -137,8 +99,8 @@ function Footer() {
                     </div>
                 </div>
             </div>
-        </section>
-  )
+        </footer>
+    );
 }
 
-export default Footer
+export default Footer;

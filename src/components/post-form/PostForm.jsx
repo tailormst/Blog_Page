@@ -4,6 +4,7 @@ import { Button, Input, RTE, Select } from "..";
 import appwriteService from "../../appwrite/config";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import './PostForm.css'; // Import the external CSS
 
 export default function PostForm({ post }) {
     const { register, handleSubmit, watch, setValue, control, getValues } = useForm({
@@ -71,18 +72,18 @@ export default function PostForm({ post }) {
     }, [watch, slugTransform, setValue]);
 
     return (
-        <form onSubmit={handleSubmit(submit)} className=" w-full p-10 flex flex-wrap bg-gray-800 text-white font-bold ">
-            <div className="w-2/3 px-2">
+        <form onSubmit={handleSubmit(submit)} className="post-form">
+            <div className="post-form-left">
                 <Input
                     label="Title :"
                     placeholder="Title"
-                    className="mb-4"
+                    className="input-field"
                     {...register("title", { required: true })}
                 />
                 <Input
                     label="Slug :"
                     placeholder="Slug"
-                    className="mb-4"
+                    className="input-field"
                     {...register("slug", { required: true })}
                     onInput={(e) => {
                         setValue("slug", slugTransform(e.currentTarget.value), { shouldValidate: true });
@@ -90,30 +91,30 @@ export default function PostForm({ post }) {
                 />
                 <RTE label="Content :" name="content" control={control} defaultValue={getValues("content")} />
             </div>
-            <div className="w-1/3 px-2">
+            <div className="post-form-right">
                 <Input
                     label="Featured Image :"
                     type="file"
-                    className="mb-4"
+                    className="input-field"
                     accept="image/png, image/jpg, image/jpeg, image/gif"
                     {...register("image", { required: !post })}
                 />
                 {post && (
-                    <div className="w-full mb-4">
+                    <div className="image-preview">
                         <img
                             src={appwriteService.getFilePreview(post.featuredImage)}
                             alt={post.title}
-                            className="rounded-lg"
+                            className="image-preview-img"
                         />
                     </div>
                 )}
                 <Select
                     options={["active", "inactive"]}
                     label="Status"
-                    className="mb-4"
+                    className="select-field"
                     {...register("status", { required: true })}
                 />
-                <Button type="submit" bgColor={post ? "bg-green-500" : undefined} className="w-full">
+                <Button type="submit" className="button-submit">
                     {post ? "Update" : "Submit"}
                 </Button>
             </div>

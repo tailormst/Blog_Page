@@ -1,0 +1,135 @@
+.post-form {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.post-form-left {
+    width: 66.66%;
+    padding: 0 16px;
+}
+
+.post-form-right {
+    width: 33.33%;
+    padding: 0 16px;
+}
+
+.input-field {
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.input-label {
+    margin-bottom: 8px;
+    display: block;
+}
+
+.image-preview {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.image-preview img {
+    border-radius: 8px;
+    width: 100%;
+}
+
+.select-field {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.button-submit {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #38a169;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button-submit:hover {
+    background-color: #2f855a;
+}
+
+@media (max-width: 480px) {
+    .post-form {
+        padding: 0;
+    }
+
+    .post-form-left,
+    .post-form-right {
+        width: 100%;
+    }
+
+    .input-field {
+        margin-bottom: 12px;
+    }
+
+    .button-submit {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .post-form {
+        padding: 30px;
+    }
+
+    .post-form-left,
+    .post-form-right {
+        width: 100%;
+    }
+
+    .button-submit {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .post-form {
+        padding: 40px;
+    }
+
+    .post-form-left {
+        width: 70%;
+    }
+
+    .post-form-right {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .post-form-left {
+        width: 66.66%;
+    }
+
+    .post-form-right {
+        width: 33.33%;
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+    .post-form-left {
+        width: 66.66%;
+    }
+
+    .post-form-right {
+        width: 33.33%;
+    }
+}

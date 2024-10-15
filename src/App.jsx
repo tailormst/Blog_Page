@@ -23,18 +23,17 @@ function App() {
   }, [])
   
   return !loading ? (
-    <div className='h-full flex flex-wrap content-between bg-gray-400'>
+    <div className='h-full flex flex-wrap content-between bg-black text-white'>
       <div className='w-full block'>
         <Header />
         <main>
-            <div className='bg-gray-950 p-4 text-white font-bold text-3xl'>
-                  Create Your Own Blog:
+            <div className='bg-black p-4 text-white font-bold text-3xl'>
+                  <p className='mb-8'>Create Your Own Blog:</p>
                   <Outlet />
             </div>
         </main>
         <Footer />
       </div>
-      
     </div>
   ) : null
 }

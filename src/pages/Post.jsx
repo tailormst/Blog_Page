@@ -35,7 +35,7 @@ export default function Post() {
     return post ? (
         <div className="py-10">
             <Container>
-                <div className="bg-gray-950 text-white w-full flex justify-center mb-4 relative border rounded-xl p-10">
+                <div className="bg-black text-white w-full flex justify-center mb-4 relative border rounded-xl p-10">
                     <img
                         src={appwriteService.getFilePreview(post.featuredImage)}
                         alt={post.title}
@@ -55,11 +55,12 @@ export default function Post() {
                         </div>
                     )}
                 </div>
-                <div className="bg-gray-950 text-white p-10">
+                <div className="bg-black text-white p-10">
                     <div className="w-full mb-6">
-                        <h1 className="text-2xl font-bold">{post.title}</h1>
+                        <h1 className="text-2xl font-bold underline"><p className="pl-32 text-left font-bold underline italic text-xl">Title: </p>{post.title}</h1>
                     </div>
                     <div className="browser-css">
+                        <p className="pl-32 text-left font-bold underline italic text-xl">Content: </p>
                         {parse(post.content)}
                     </div>
                 </div>

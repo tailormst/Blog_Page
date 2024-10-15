@@ -1,0 +1,139 @@
+header {
+    padding: 16px 0;
+    background-color: black;
+    color: white;
+    border-top: 2px solid white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 12px;
+}
+
+header ul {
+    display: flex;
+    margin-left: auto;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+header ul li button {
+    padding: 8px 24px;
+    transition: background-color 0.2s ease;
+    border-radius: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+header ul li button:hover {
+    background-color: #1D4ED8;
+}
+
+header .menu-btn {
+    display: none;
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    header ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    header ul.show {
+        display: flex;
+    }
+
+    header .menu-btn {
+        display: block;
+    }
+
+    header h1 {
+        display: none;
+    }
+
+    header ul li {
+        margin-left: 0;
+        padding: 12px;
+    }
+
+    header ul li button {
+        width: 100%;
+        text-align: left;
+        padding: 12px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    header h1 {
+        font-size: 18px;
+        display: inline-block;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav ul {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav ul {
+        display: flex;
+    }
+}
