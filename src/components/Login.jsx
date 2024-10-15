@@ -21,6 +21,10 @@ function Login() {
                 if(userData) dispatch(authLogin(userData));
                 navigate("/")
             }
+
+            const apiUrl = `${import.meta.env.VITE_APPWRITE_ENDPOINT}/account/sessions`;
+            console.log(apiUrl); 
+
         } catch (error) {
             setError(error.message)
         }
