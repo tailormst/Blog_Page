@@ -2,9 +2,9 @@ footer {
     position: relative;
     overflow: hidden;
     padding: 40px 0;
-    background-color: black;
-    color: white;
-    border-top: 2px solid white;
+    background-color: #222; /* Darker background for better contrast */
+    color: white; /* White text for readability */
+    border-top: 3px solid #1D4ED8; /* Blue border for a modern touch */
 }
 
 .footer-container {
@@ -57,20 +57,21 @@ footer {
 
 .footer-title {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2rem; /* Increased font size for better visibility */
     margin-top: 8px;
+    letter-spacing: 1px; /* Slightly spaced letters for a modern look */
 }
 
 .footer-text {
     font-size: 0.875rem;
     font-weight: bold;
-    color: #3b82f6;
+    color: #3b82f6; /* Blue color for copyright text */
 }
 
 .footer-heading {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 0.75rem;
+    font-size: 0.85rem; /* Slightly larger font size */
     color: white;
     margin-bottom: 36px;
     letter-spacing: 1px;
@@ -78,7 +79,7 @@ footer {
 }
 
 .footer-heading:hover {
-    color: #3b82f6;
+    color: #1D4ED8; /* Change color on hover */
 }
 
 .footer-link {
@@ -89,7 +90,7 @@ footer {
 }
 
 .footer-link:hover {
-    color: #3b82f6;
+    color: #1D4ED8; /* Change color on hover */
 }
 
 .footer-list-item {
@@ -115,54 +116,54 @@ footer {
     }
 
     .footer-title {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Adjusted font size for mobile */
     }
 
     .footer-text {
-        font-size: 0.75rem;
+        font-size: 0.75rem; /* Adjusted font size for mobile */
     }
 
     .footer-heading {
-        font-size: 0.65rem;
+        font-size: 0.7rem; /* Adjusted font size for mobile */
     }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
     .footer-item-lg-5 {
-        width: 50%;
+        width: 50%; /* Adjusted width for medium screens */
     }
 
     .footer-item-lg-2,
     .footer-item-lg-3 {
-        width: 50%;
+        width: 50%; /* Adjusted width for medium screens */
     }
 
     .footer-title {
-        font-size: 1.75rem;
+        font-size: 1.75rem; /* Adjusted font size for medium screens */
     }
 
     .footer-heading {
-        font-size: 0.7rem;
+        font-size: 0.75rem; /* Adjusted font size for medium screens */
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) {
     .footer-title {
-        font-size: 2rem;
+        font-size: 2rem; /* Consistent font size for larger screens */
     }
 
     .footer-heading {
-        font-size: 0.75rem;
+        font-size: 0.75rem; /* Consistent font size for larger screens */
     }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+@media only screen and (min-width: 1025px) {
     .footer-title {
-        font-size: 2.25rem;
+        font-size: 2.25rem; /* Font size for larger screens */
     }
 
     .footer-heading {
-        font-size: 0.8rem;
+        font-size: 0.8rem; /* Font size for larger screens */
     }
 }
 

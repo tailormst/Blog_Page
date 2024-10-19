@@ -23,11 +23,11 @@ function App() {
   }, [])
   
   return !loading ? (
-    <div className='h-full flex flex-wrap content-between bg-black text-white'>
+    <div className='h-full flex flex-wrap content-between'>
       <div className='w-full block'>
         <Header />
         <main>
-            <div className='bg-black p-4 text-white font-bold text-3xl'>
+            <div className=' p-4 font-bold text-3xl'>
                   <p className='mb-8'>Create Your Own Blog:</p>
                   <Outlet />
             </div>

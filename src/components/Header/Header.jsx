@@ -31,7 +31,6 @@ function Header() {
             <Link to="/">
               <Logo width="70px" />
             </Link>
-            <h1>TYPE YOUR BLOG</h1> {/* This will be hidden on mobile */}
           </div>
 
           {/* Menu button for mobile */}

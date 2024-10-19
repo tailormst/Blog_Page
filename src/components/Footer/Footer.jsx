@@ -12,11 +12,10 @@ function Footer() {
                         <div className="footer-content">
                             <div className="footer-logo">
                                 <Logo width="100px" />
-                                <h1 className="footer-title">TYPE YOUR BLOG</h1>
                             </div>
                             <div>
                                 <p className="footer-text">
-                                    &copy; Copyright 2023. All Rights Reserved by DevUI.
+                                    &copy; Copyright 2023. All Rights Reserved by AIML-B'27.
                                 </p>
                             </div>
                         </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import blogLogo from '../../blog.png'
+import blogLogo from '../../AIlogo.png'
 
 function Logo({width = '100px'}) {
   return (
@@ -7,7 +7,7 @@ function Logo({width = '100px'}) {
       <img 
       src={blogLogo} 
       alt="Logo"
-      style={{width:"80px"}}
+      style={{width:"200px"}}
       />
     </div>
   )
